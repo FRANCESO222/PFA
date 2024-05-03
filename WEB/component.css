@@ -1,0 +1,113 @@
+body {
+    background: linear-gradient(to right, #ff0080, #ff8c00);
+    margin: 0;
+    padding: 0;
+  }
+  .dashboard {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-gap: 20px;
+      margin-top: 30px;
+    }
+
+    .widget {
+      background-color: #ffffff;
+      border-radius: 5px;
+      padding: 20px;
+      box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .widget h2 {
+      color: #3b0909;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+  h1 {
+    text-align: center;
+    color: #3b0909;
+    font-size: 36px; /* Increase font size */
+    background-color: #b3cdda; /* Light-colored background */
+    padding: 20px; /* Add padding for spacing */
+  }
+
+  .input {
+    color: #8707ff;
+    border: 2px solid #8707ff;
+    border-radius: 10px;
+    padding: 10px;
+    background: transparent;
+    flex: 1; /* Take up remaining space */
+    margin-right: 10px; /* Add margin-right for spacing */
+  }
+
+  .input:active {
+    box-shadow: 2px 2px 15px #8707ff inset;
+  }
+
+  .upload-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px; /* Add margin-left to create space */
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Align items to the start */
+    height: 100vh;
+    margin-bottom: auto; /* Move the container to the top */
+  }
+
+  .upload-container {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    justify-content: flex-start; /* Align items to the start */
+    margin-top: 20px;
+  }
+
+  /* Style the file input button */
+  .file-input-label {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: fit-content; /* Adjust width to content */
+    margin-right: 10px; /* Add margin-right for spacing */
+  }
+
+  /* Hide the original file input */
+  .file-input-label input[type="file"] {
+    display: none;
+  }
+  
+  .data-grid {
+      margin-top: 20px;
+    }
+
+    #transaction-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    #transaction-table th,
+    #transaction-table td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    #transaction-table th {
+      background-color: #3b0909;
+      color: #fff;
+    }
+
+    #transaction-table tbody tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
